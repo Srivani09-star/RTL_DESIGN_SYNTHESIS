@@ -207,6 +207,7 @@ Therefore, the circuit forwards one of the two input signals depending on the se
 ### **Verilog Code**
 
 The RTL implementation shown above describes the required combinational behavior of the 2:1 multiplexer.
+<img width="600" height="180" alt="MUXcode" src="https://github.com/user-attachments/assets/ea1f8149-e824-4801-b2ba-aca8e3182778" />
 
 ---
 
@@ -345,6 +346,7 @@ yosys
 ### **Launching Yosys**
 
 Once Yosys is started, synthesis commands can be entered through its interactive shell.
+<img width="744" height="160" alt="yosysinvoke" src="https://github.com/user-attachments/assets/dd3ddbce-6139-4e68-b1f0-92f4fc9e9748" />
 
 The `good_mux` module was synthesized using the following sequence:
 
@@ -379,6 +381,7 @@ These reports can provide details about the number of ports, wires, cells, and o
 ### **Synthesis Statistics**
 
 The synthesis statistics provide an overview of how the original RTL was transformed during the synthesis process.
+<img width="975" height="623" alt="yosyssynthesis" src="https://github.com/user-attachments/assets/a8cc199c-855e-4093-b6a4-db6a42e18b5b" />
 
 The synthesized circuit can also be viewed graphically by using:
 
@@ -415,6 +418,7 @@ This provides a useful connection between the high-level RTL description and the
 ### **Gate-Level Logic**
 
 The resulting synthesized logic can be examined to understand how the multiplexer functionality has been represented using standard cells.
+<img width="1254" height="407" alt="yosysgoodmux" src="https://github.com/user-attachments/assets/3d13992f-5488-40df-ad60-eaa2f4eaddb1" />
 
 ---
 
