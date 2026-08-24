@@ -202,10 +202,13 @@ Only one condition is covered.
 When `i0 = 0`, the output is not updated. The synthesized circuit must therefore preserve the previous value of `y`.
 
 ### **Waveform**
+<img width="1071" height="516" alt="image" src="https://github.com/user-attachments/assets/8fc0564d-abab-47cb-88d3-63095b03e302" />
 
 The waveform demonstrates the output behaviour caused by the incomplete assignment.
 
 ### **Synthesized Netlist**
+<img width="1128" height="525" alt="image" src="https://github.com/user-attachments/assets/e7fe060e-f0c5-47da-95d4-a64882f3a5fe" />
+
 
 The synthesized structure illustrates the storage inferred from the incomplete combinational description.
 
@@ -239,6 +242,8 @@ The behaviour can be summarized as:
 | `0`      | `0`      | No assignment |
 
 The final condition remains uncovered, so the output can retain its previous value and latch inference may occur.
+### **Synthesized Netlist**
+<img width="1102" height="439" alt="image" src="https://github.com/user-attachments/assets/d6e65d54-7654-4161-a132-15f9ef7fea7c" />
 
 ### **Complete Version**
 
@@ -290,10 +295,12 @@ A 2-bit selector has four possible combinations:
 Since two selector combinations are not covered, the synthesis tool may infer storage.
 
 ### **Waveform**
+<img width="1068" height="529" alt="image" src="https://github.com/user-attachments/assets/22544e51-9d27-4ab6-a4bc-223ffd97995f" />
 
 The waveform shows the output behaviour for the covered and uncovered selector conditions.
 
 ### **Synthesized Netlist**
+<img width="1059" height="492" alt="image" src="https://github.com/user-attachments/assets/268b345e-d0a7-4c1c-bf21-c84df05525ca" />
 
 The synthesized result demonstrates the hardware consequences of incomplete case coverage.
 
@@ -330,10 +337,12 @@ The resulting behaviour is:
 The `default` branch ensures that previously uncovered selector values receive a defined output.
 
 ### **Waveform**
+<img width="1057" height="505" alt="image" src="https://github.com/user-attachments/assets/7ee93536-f490-4571-bf69-947d8d3a18fe" />
 
 The waveform verifies the output response for each selector combination.
 
 ### **Synthesized Netlist**
+<img width="1071" height="469" alt="image" src="https://github.com/user-attachments/assets/cb7d0530-4650-44f6-ac1d-ef90e1266130" />
 
 The synthesized circuit demonstrates the complete combinational implementation.
 
@@ -382,6 +391,7 @@ The output `y` is assigned in every branch, but `x` is not assigned when `sel = 
 As a result, storage may be inferred for `x`.
 
 ### **Synthesized Netlist**
+<img width="918" height="503" alt="image" src="https://github.com/user-attachments/assets/5df3b09f-d4b0-474a-bc10-f27666cf8810" />
 
 The synthesized structure highlights the effect of incomplete assignment for one output.
 
@@ -435,6 +445,7 @@ Consequently, the selector `2'b10` matches more than one case item.
 This is an **overlap condition**, rather than a latch condition.
 
 ### **Waveform**
+<img width="1099" height="553" alt="image" src="https://github.com/user-attachments/assets/5dfc84c9-1678-410e-b6a2-08607c11fe02" />
 
 The simulation waveform demonstrates the behaviour produced by the overlapping patterns.
 
@@ -589,6 +600,7 @@ Single Output
 ```
 
 ### **Waveform**
+<img width="1092" height="518" alt="image" src="https://github.com/user-attachments/assets/d1573020-f9ac-413a-aaa4-be5cd4f4962b" />
 
 The waveform verifies that the output corresponds to the input selected by the control signal.
 
@@ -621,6 +633,7 @@ A `case` statement provides a direct way of representing these selection conditi
 The selected output receives the input while the remaining outputs remain inactive.
 
 ### **Waveform**
+<img width="1087" height="554" alt="image" src="https://github.com/user-attachments/assets/16e2645f-b884-4e9f-ae9d-5202261fc3ad" />
 
 The waveform verifies that the input is routed to the correct output for each selector value.
 
@@ -662,6 +675,7 @@ This approach avoids writing a separate branch for every output line.
 | Repetition    | Higher            | Lower                |
 
 ### **Waveform**
+<img width="1063" height="525" alt="image" src="https://github.com/user-attachments/assets/a635023a-0c4f-45da-8a94-df45bc33e5cf" />
 
 The waveform verifies that the correct output is activated based on the select signal.
 
@@ -735,6 +749,7 @@ endgenerate
 The use of a generate loop makes the RCA scalable because the number of Full Adder stages can be controlled through the width parameter.
 
 ### **RTL Simulation Waveform**
+<img width="1124" height="538" alt="image" src="https://github.com/user-attachments/assets/8f6df04a-1993-43b2-bb70-9770a193ef0c" />
 
 The RTL waveform verifies the addition operation, sum output, and carry propagation.
 
