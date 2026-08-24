@@ -103,6 +103,8 @@ Y = A · B
 | 1 | 1 | 1 |
 
 ### **Synthesized Result**
+<img width="1233" height="370" alt="image" src="https://github.com/user-attachments/assets/3eb7b6b2-28cf-41b6-b6dc-37948f258a0b" />
+
 
 The RTL description is synthesized using Yosys and mapped to the appropriate logic structure available in the target technology library.
 
@@ -132,6 +134,7 @@ Y = A + B
 | 1 | 1 | 1 |
 
 ### **Synthesized Result**
+<img width="1257" height="428" alt="image" src="https://github.com/user-attachments/assets/4789a49c-119c-4c48-91a7-2060130a17f3" />
 
 During synthesis, Yosys analyzes the Boolean function and generates the corresponding hardware representation.
 
@@ -165,6 +168,7 @@ The output becomes HIGH only when all three inputs are HIGH.
 | 1 | 1 | 1 | 1 |
 
 ### **Synthesized Result**
+<img width="812" height="296" alt="image" src="https://github.com/user-attachments/assets/6f4a41db-e799-4f01-bf37-5e827c55e716" />
 
 The synthesis tool identifies the required three-input logic function and generates an appropriate hardware implementation.
 
@@ -238,10 +242,12 @@ The synthesis tool can use this constant information to simplify the sequential 
 This experiment investigates the behavior and synthesis of a D flip-flop whose input is driven by a constant value.
 
 ### **Synthesized Circuit**
+<img width="1264" height="354" alt="image" src="https://github.com/user-attachments/assets/24738dc5-f99a-4c35-b7ae-8442cc94ec2f" />
 
 The synthesized circuit shows how the constant input is represented in the resulting sequential hardware structure.
 
 ### **Simulation Waveform**
+<img width="1269" height="617" alt="image" src="https://github.com/user-attachments/assets/b6112fa1-b79c-4f11-9bf6-b8651f382bc1" />
 
 The simulation waveform verifies the output behavior with respect to the clock.
 
@@ -256,10 +262,12 @@ The second experiment further examines constant propagation through a D flip-flo
 When the synthesis tool identifies that a signal remains constant, it can propagate this information through the connected logic and simplify the resulting circuit.
 
 ### **Synthesized Circuit**
+<img width="764" height="610" alt="image" src="https://github.com/user-attachments/assets/229a9993-3b0c-447a-b57b-4879d6239ce6" />
 
 The synthesized representation demonstrates the optimized sequential structure.
 
 ### **Simulation Waveform**
+<img width="1275" height="629" alt="image" src="https://github.com/user-attachments/assets/0987cc0c-9fea-4d8a-9a8b-43eca14abbef" />
 
 The waveform is used to verify the relationship between the clock and output signals.
 
@@ -274,10 +282,12 @@ The third experiment continues the study of constant propagation and sequential 
 The synthesized result provides a clearer view of how constant information can affect the final sequential hardware structure.
 
 ### **Synthesized Circuit**
+<img width="1254" height="273" alt="image" src="https://github.com/user-attachments/assets/cdc61e9d-5ccf-4d7b-ad2d-033fbedb021e" />
 
 The synthesized circuit represents the optimized implementation generated from the RTL description.
 
 ### **Simulation Waveform**
+<img width="1264" height="618" alt="image" src="https://github.com/user-attachments/assets/1a61e6a7-358d-4a43-a2d3-15333d2e5722" />
 
 The waveform is analyzed to confirm that the optimized circuit produces the expected output behavior.
 
@@ -310,10 +320,12 @@ Counters are useful for studying sequential optimization because they combine st
 During synthesis, the tool analyzes the RTL description and determines an efficient hardware implementation.
 
 ### **Original Counter**
+<img width="1259" height="310" alt="image" src="https://github.com/user-attachments/assets/5887f08d-3b9e-41da-82f7-105fe77d51eb" />
 
 The original counter is synthesized to observe the hardware structure generated from the RTL description.
 
 ### **Modified Counter**
+<img width="1269" height="407" alt="image" src="https://github.com/user-attachments/assets/0349dfdc-d1d5-469a-8fb7-8e96a4dadbdc" />
 
 A modified counter design is synthesized after making changes to the original RTL.
 
