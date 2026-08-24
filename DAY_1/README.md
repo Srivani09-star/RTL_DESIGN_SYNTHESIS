@@ -1,5 +1,4 @@
 
-
 # **Day 01 — RTL Design, Simulation & Synthesis**
 
 ## **Experiment Objective**
